@@ -1,0 +1,105 @@
+naca  1213
+
+
+oper
+re 1e+06
+mach 0
+visc
+pacc
+
+
+alfa -12
+dump xfoil_a-12.000_dump.dat
+cpwr xfoil_a-12.000_cpwr.dat
+alfa -11.1724
+dump xfoil_a-11.172_dump.dat
+cpwr xfoil_a-11.172_cpwr.dat
+alfa -10.3448
+dump xfoil_a-10.345_dump.dat
+cpwr xfoil_a-10.345_cpwr.dat
+alfa -9.51724
+dump xfoil_a-9.517_dump.dat
+cpwr xfoil_a-9.517_cpwr.dat
+alfa -8.68966
+dump xfoil_a-8.690_dump.dat
+cpwr xfoil_a-8.690_cpwr.dat
+alfa -7.86207
+dump xfoil_a-7.862_dump.dat
+cpwr xfoil_a-7.862_cpwr.dat
+alfa -7.03448
+dump xfoil_a-7.034_dump.dat
+cpwr xfoil_a-7.034_cpwr.dat
+alfa -6.2069
+dump xfoil_a-6.207_dump.dat
+cpwr xfoil_a-6.207_cpwr.dat
+alfa -5.37931
+dump xfoil_a-5.379_dump.dat
+cpwr xfoil_a-5.379_cpwr.dat
+alfa -4.55172
+dump xfoil_a-4.552_dump.dat
+cpwr xfoil_a-4.552_cpwr.dat
+alfa -3.72414
+dump xfoil_a-3.724_dump.dat
+cpwr xfoil_a-3.724_cpwr.dat
+alfa -2.89655
+dump xfoil_a-2.897_dump.dat
+cpwr xfoil_a-2.897_cpwr.dat
+alfa -2.06897
+dump xfoil_a-2.069_dump.dat
+cpwr xfoil_a-2.069_cpwr.dat
+alfa -1.24138
+dump xfoil_a-1.241_dump.dat
+cpwr xfoil_a-1.241_cpwr.dat
+alfa -0.413793
+dump xfoil_a-0.414_dump.dat
+cpwr xfoil_a-0.414_cpwr.dat
+alfa 0.413793
+dump xfoil_a00.414_dump.dat
+cpwr xfoil_a00.414_cpwr.dat
+alfa 1.24138
+dump xfoil_a01.241_dump.dat
+cpwr xfoil_a01.241_cpwr.dat
+alfa 2.06897
+dump xfoil_a02.069_dump.dat
+cpwr xfoil_a02.069_cpwr.dat
+alfa 2.89655
+dump xfoil_a02.897_dump.dat
+cpwr xfoil_a02.897_cpwr.dat
+alfa 3.72414
+dump xfoil_a03.724_dump.dat
+cpwr xfoil_a03.724_cpwr.dat
+alfa 4.55172
+dump xfoil_a04.552_dump.dat
+cpwr xfoil_a04.552_cpwr.dat
+alfa 5.37931
+dump xfoil_a05.379_dump.dat
+cpwr xfoil_a05.379_cpwr.dat
+alfa 6.2069
+dump xfoil_a06.207_dump.dat
+cpwr xfoil_a06.207_cpwr.dat
+alfa 7.03448
+dump xfoil_a07.034_dump.dat
+cpwr xfoil_a07.034_cpwr.dat
+alfa 7.86207
+dump xfoil_a07.862_dump.dat
+cpwr xfoil_a07.862_cpwr.dat
+alfa 8.68966
+dump xfoil_a08.690_dump.dat
+cpwr xfoil_a08.690_cpwr.dat
+alfa 9.51724
+dump xfoil_a09.517_dump.dat
+cpwr xfoil_a09.517_cpwr.dat
+alfa 10.3448
+dump xfoil_a10.345_dump.dat
+cpwr xfoil_a10.345_cpwr.dat
+alfa 11.1724
+dump xfoil_a11.172_dump.dat
+cpwr xfoil_a11.172_cpwr.dat
+alfa 12
+dump xfoil_a12.000_dump.dat
+cpwr xfoil_a12.000_cpwr.dat
+pwrt
+xfoil_pwrt.dat
+plis
+
+quit
