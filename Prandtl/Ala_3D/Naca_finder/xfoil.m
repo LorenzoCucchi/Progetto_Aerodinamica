@@ -87,7 +87,7 @@ fname = mfilename;
 file_coord= [foil_name '.foil'];
 
 % Save coordinates
-if ischar(coord),  % Either a NACA string or a filename
+if ischar(coord), % Either a NACA string or a filename
   if isempty(regexpi(coord,'^NACA *[0-9]{4,5}$')) % Check if a NACA string
 %     foil_name = coord; % some redundant code removed to go green ( ~isempty if uncommented)
 %   else             % Filename supplied
