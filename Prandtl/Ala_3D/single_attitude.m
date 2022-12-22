@@ -5,7 +5,7 @@ function [Cl, L_cl, L_circ, Gamma, Cdi, Di] = single_attitude(par_wing,par_field
 %mapping
 z=@(th) -par_wing.b/2 * cos(th);
 
-N=5; %grado del polinomio di chebicev interpolante (introduce errore per troncamento)
+N=100; %grado del polinomio di chebicev interpolante (introduce errore per troncamento)
 
 B = Chev_coeffs(par_wing,z,N); %coefficienti del polinomio in theta
 

@@ -1,10 +1,10 @@
-function [Cl,L_cl,L_circ,alfa_v] = alpha_plots(par_wing,par_field,alfa_inf,alfa_sup)
+function [Cl,Cdi,alfa_v] = alpha_plots(par_wing,par_field,alfa_inf,alfa_sup)
 
 %plots parameters
 N_plot=500;
 
 
-alfa_v=linspace(alfa_inf,alfa_sup,50);
+alfa_v=linspace(alfa_inf,alfa_sup,150);
 
 %mapping
 z=@(th) -par_wing.b/2 * cos(th);
@@ -16,6 +16,7 @@ theta_v=linspace(0,pi,N_plot); %vettore di theta dove valutare il polinomio inte
 
 %inizializzo i vettore per i plot
 Cl=nan(1,length(alfa_v));
+Cdi=nan(1,length(alfa_v));
 L_cl=nan(1,length(alfa_v));
 L_circ=nan(1,length(alfa_v));
 
@@ -46,8 +47,15 @@ for j=1:length(alfa_v)
     Gamma_int=trapz(linspace(0,pi,N_plot),Gamma);
     L_circ(j)=-Gamma_int*par_field.rho*par_field.Uinf;
     
-    % [la portanza calcolata dalla teoria col Cl e la portanza generata tramite
-    %    la circolazione dovrebbero risualtare uguali!]
+    % calcolo della resistenza indotta
+    delta=0;
+    for n=2:N
+        delta=delta + n * (B(n)/B(1))^2;
+    end
+    
+    
+    Cdi(j)=(Cl(j)^2 /(pi * par_wing.AR)) * (1+delta);
+%     Di= 0.5* par_field.rho * par_field.Uinf^2 * par_wing.S * Cdi;
     
 
 end
